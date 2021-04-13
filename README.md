@@ -25,8 +25,9 @@ I installed the all dependence to the project
  
 ```sh
 "scripts": {
-    "dev" :"node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir build", -> this is to convert the code into compatible versions of javascript
+    "dev": "nodemon src/index.js --exec babel-node", -> This is for development environment
+    "start": "node build/index.js" -> this is for production environment
   }, 
  
 ```

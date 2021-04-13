@@ -4,14 +4,16 @@
   "description": "This is a proyect to learn more about **jwt**, **mongodb** and **nodeJS**",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "build": "babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js" 
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anibaljose/proyect-api-rest-jwt-mongodb.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "arorivegt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anibaljose/proyect-api-rest-jwt-mongodb/issues"
