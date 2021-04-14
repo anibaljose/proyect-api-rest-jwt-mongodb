@@ -2,6 +2,7 @@ import express from 'express'
 import { version } from 'mongoose';
 import morgan from 'morgan' //midleware
 import pkg from '../package.json'
+import productRoute from './routes/product.routes'
 
 const app = express();
 
@@ -10,6 +11,8 @@ app.set('pkg',pkg);
 
 //cada vez que visiten la pagina vere en el log de la terminal las peticiones realizadas
 app.use(morgan('dev'));
+//con esto le decimos que puede interpretar los request que vienen en json
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.json({
@@ -19,5 +22,7 @@ app.get('/', (req, res) => {
         Version: app.get('pkg').version
     })
 })
+
+app.use('/products', productRoute)
 
 export default app;
