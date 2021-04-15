@@ -1,0 +1,118 @@
+{
+	"id": "141d412a-d437-ef33-8adf-069cd19519fb",
+	"name": "API Company Product",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Products",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"order": [
+				"c09f142b-45f8-979d-8c61-3e3d6d1aedf2",
+				"1fb1deec-39cd-61c2-09fd-fb703179a92c",
+				"12f14192-42c0-3543-48cf-5af164c8b0ac"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "4122b8c5-dc74-82b0-c2fa-85203e0d7677"
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"order": [],
+			"owner": 0,
+			"folders_order": [],
+			"id": "6f483f38-e5a2-efc5-b5be-9b2982288beb"
+		}
+	],
+	"folders_order": [
+		"4122b8c5-dc74-82b0-c2fa-85203e0d7677",
+		"6f483f38-e5a2-efc5-b5be-9b2982288beb"
+	],
+	"timestamp": 1618452280576,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "12f14192-42c0-3543-48cf-5af164c8b0ac",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "",
+			"folder": "4122b8c5-dc74-82b0-c2fa-85203e0d7677",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618452513011,
+			"name": "/products",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "12f14192-42c0-3543-48cf-5af164c8b0ac",
+			"rawModeData": "{\n\t\"name\":\"laptop toshiba\",\n\t\"category\": \"laptop\",\n\t\"price\":1500.00,\n\t\"imgUrl\":\"https://static.toiimg.com/photo/54236775/Toshiba-Satellite-C50-A-I0110t-Laptop.jpg\"\n}"
+		},
+		{
+			"id": "1fb1deec-39cd-61c2-09fd-fb703179a92c",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/products",
+			"folder": "4122b8c5-dc74-82b0-c2fa-85203e0d7677",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618452509878,
+			"name": "/products:productId",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": []
+		},
+		{
+			"id": "c09f142b-45f8-979d-8c61-3e3d6d1aedf2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/products",
+			"folder": "4122b8c5-dc74-82b0-c2fa-85203e0d7677",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618452509878,
+			"name": "/products",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": []
+		}
+	]
+}
