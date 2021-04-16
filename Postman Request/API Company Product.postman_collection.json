@@ -5,6 +5,18 @@
 	"order": [],
 	"folders": [
 		{
+			"name": "Auth",
+			"description": "",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"order": [
+				"0da5c810-69c8-0b5f-338d-2a19f75ca522",
+				"6bc25c27-c0d6-da81-c16a-7ff33effd3c7"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "9eed5f64-5b2e-12b9-af4b-1afaeaaa6a0e"
+		},
+		{
 			"name": "Products",
 			"description": "",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
@@ -31,12 +43,44 @@
 	],
 	"folders_order": [
 		"4122b8c5-dc74-82b0-c2fa-85203e0d7677",
-		"6f483f38-e5a2-efc5-b5be-9b2982288beb"
+		"6f483f38-e5a2-efc5-b5be-9b2982288beb",
+		"9eed5f64-5b2e-12b9-af4b-1afaeaaa6a0e"
 	],
 	"timestamp": 1618452280576,
 	"owner": 0,
 	"public": false,
 	"requests": [
+		{
+			"id": "0da5c810-69c8-0b5f-338d-2a19f75ca522",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/auth/signin",
+			"folder": "9eed5f64-5b2e-12b9-af4b-1afaeaaa6a0e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618536482482,
+			"name": "/api/auth/signin",
+			"description": "Get all products",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"joe@gmail.com\",\n\t\"password\": \"sdasdasdasdas\"\n}"
+		},
 		{
 			"id": "12f14192-42c0-3543-48cf-5af164c8b0ac",
 			"headers": "Content-Type: application/json\n",
@@ -90,6 +134,37 @@
 			"description": "Get product by id",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
 			"responses": []
+		},
+		{
+			"id": "6bc25c27-c0d6-da81-c16a-7ff33effd3c7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/auth/signup",
+			"folder": "9eed5f64-5b2e-12b9-af4b-1afaeaaa6a0e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618536326222,
+			"name": "/api/auth/signup",
+			"description": "Get all products",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\" :\"joe\",\n\t\"email\" : \"joe@gmail.com\",\n\t\"password\" : \"sdasdasdasdas\",\n\t\"roles\":[\"admin\", \"moderator\"]\n}"
 		},
 		{
 			"id": "733541d4-8e45-6f99-da10-c1b164911905",
