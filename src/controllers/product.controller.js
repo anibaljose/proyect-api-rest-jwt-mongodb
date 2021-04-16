@@ -1,4 +1,5 @@
 import { json } from "express"
+import { restart } from "nodemon";
 import Product from '../models/Product'
 
 export const getProducts = async (req, res) => {
@@ -21,9 +22,14 @@ export const getProductById = async (req, res) => {
 }
 
 export const updateProductById = async (req, res) => {
-    
+    const updateProduct = await Product.findOneAndUpdate(req.params.productId, req.body, {
+        new:true}
+    );
+    res.status(204).json(updateProduct)
 }
 
-export const deleteProductById = async(req, res) => {
-    
+export const deleteProductById = async (req, res) => {
+    const {productId} = req.params;
+    await Product.findByIdAndDelete(productId)
+    res.status(204).json()
 }

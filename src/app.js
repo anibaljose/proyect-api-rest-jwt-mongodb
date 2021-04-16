@@ -3,8 +3,12 @@ import { version } from 'mongoose';
 import morgan from 'morgan' //midleware
 import pkg from '../package.json'
 import productRoute from './routes/product.routes'
+import authRoute from './routes/auth.routes'
+
+import {createRols} from './libs/initialSetup'
 
 const app = express();
+createRols();
 
 //Guarda en una variable el archivo package.json que importe
 app.set('pkg',pkg);
@@ -23,6 +27,7 @@ app.get('/', (req, res) => {
     })
 })
 
-app.use('/products', productRoute)
+app.use('/api/products', productRoute)
+app.use('/api/auth', authRoute)
 
 export default app;
