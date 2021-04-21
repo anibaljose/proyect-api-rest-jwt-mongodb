@@ -83,11 +83,17 @@
 		},
 		{
 			"id": "12f14192-42c0-3543-48cf-5af164c8b0ac",
-			"headers": "Content-Type: application/json\n",
+			"headers": "Content-Type: application/json\nx-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
 					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k",
 					"description": "",
 					"enabled": true
 				}
@@ -105,7 +111,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618507919034,
+			"time": 1618969529391,
 			"name": "/products",
 			"description": "create product",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
@@ -168,8 +174,15 @@
 		},
 		{
 			"id": "733541d4-8e45-6f99-da10-c1b164911905",
-			"headers": "",
-			"headerData": [],
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:4000/api/products/60779f038d640c216a814b1b",
 			"folder": "4122b8c5-dc74-82b0-c2fa-85203e0d7677",
 			"queryParams": [],
@@ -183,7 +196,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618507922080,
+			"time": 1618969527061,
 			"name": "/products:productId",
 			"description": "delete product",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
@@ -223,8 +236,15 @@
 		},
 		{
 			"id": "c09f142b-45f8-979d-8c61-3e3d6d1aedf2",
-			"headers": "",
-			"headerData": [],
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:4000/api/products",
 			"folder": "4122b8c5-dc74-82b0-c2fa-85203e0d7677",
 			"queryParams": [],
@@ -238,7 +258,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618507920934,
+			"time": 1618969525654,
 			"name": "/products",
 			"description": "Get all products",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",

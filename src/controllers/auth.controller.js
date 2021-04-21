@@ -37,8 +37,18 @@ export const signin = async (req, res) => {
     const userFound = await User.findOne({email: req.body.email}).populate("roles") //con populate se pobla los roles con la info.
     if (!userFound) return res.status(400).json({message: "User not found"})
 
+    const matchPassword = await User.comparePassword(req.body.password, userFound.password)
+
+    if(!matchPassword) return res.status(401).json({token:null, message:'Invalid paassword'})
+
+    const token = jwt.sign({id: userFound._id}, config.SECRET, {
+       expiresIn: 864000 //this value is in seconds
+    })
+
     console.log(userFound);
 
-    res.json({token:''})
+    // se puede escribir para resumir, 
+    //res.json({token})
+    res.json({token:token}) 
 
 }

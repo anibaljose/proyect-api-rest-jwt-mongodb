@@ -7,19 +7,23 @@ const router = Router()
 //otra forma de importar todos los metodos
 import * as productCtrl from '../controllers/product.controller'
 
+//exportar el middleware donde contiene la verificacion del token
+import {verifyToken} from '../middlewares'
+
 //con solo indicarle el slash / y en app.js llamar app.use('/products', productRoute) me indicara que antes del slash va precedido
 // con products
 //router.get('/', (req, res) => res.json('get products'))
 
-//cambiamos lo que esta arriba con el controlador que creamos
-router.get('/', productCtrl.getProducts)
+//cambiamos lo que esta arriba con el controlador que creamos en cada ruta
 
-router.post('/', productCtrl.createProduct)
+router.get('/', verifyToken, productCtrl.getProducts)
 
-router.get('/:productId', productCtrl.getProductById)
+router.post('/', verifyToken, productCtrl.createProduct)
 
-router.put('/:productId', productCtrl.updateProductById)
+router.get('/:productId', verifyToken, productCtrl.getProductById)
 
-router.delete('/:productId', productCtrl.deleteProductById)
+router.put('/:productId', verifyToken, productCtrl.updateProductById)
+
+router.delete('/:productId', verifyToken, productCtrl.deleteProductById)
 
 export default router;
