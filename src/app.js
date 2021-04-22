@@ -4,6 +4,7 @@ import morgan from 'morgan' //midleware
 import pkg from '../package.json'
 import productRoute from './routes/product.routes'
 import authRoute from './routes/auth.routes'
+import userRoutes from './routes/user.routes'
 
 import {createRols} from './libs/initialSetup'
 
@@ -29,5 +30,6 @@ app.get('/', (req, res) => {
 
 app.use('/api/products', productRoute)
 app.use('/api/auth', authRoute)
+app.use('/api/users', userRoutes)
 
 export default app;

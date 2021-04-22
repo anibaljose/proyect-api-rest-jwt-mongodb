@@ -18,14 +18,14 @@ import {authJwt} from '../middlewares'
 //en la rutas podemos agregar middlewere para comprobar antes de que ingesar al ruta, como el token, si es admin, moderador
 //o cualquier otra cosa que queremos validar
 
-router.get('/', [authJwt.verifyToken, authJwt.isModerator], productCtrl.getProducts)
+router.get('/', [authJwt.verifyToken], productCtrl.getProducts)
 
-router.post('/', [authJwt.verifyToken], productCtrl.createProduct)
+router.post('/', [authJwt.verifyToken, authJwt.isModerator], productCtrl.createProduct)
 
 router.get('/:productId', [authJwt.verifyToken], productCtrl.getProductById)
 
-router.put('/:productId', [authJwt.verifyToken], productCtrl.updateProductById)
+router.put('/:productId', [authJwt.verifyToken, authJwt.isAdmin], productCtrl.updateProductById)
 
-router.delete('/:productId', [authJwt.verifyToken, authJwt.isModerator], productCtrl.deleteProductById)
+router.delete('/:productId', [authJwt.verifyToken, authJwt.isAdmin], productCtrl.deleteProductById)
 
 export default router;

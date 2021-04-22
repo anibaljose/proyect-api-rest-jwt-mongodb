@@ -43,3 +43,10 @@ I installed the all dependence to the project
   npm i @babel/core @babel/cli @babel/node @babel/preset-env nodemon -D
    
 ```
+
+## Another interesting libraries or technologies
+* [Express validator](https://express-validator.github.io/docs/)
+* [Joi](https://joi.dev/api/?v=17.4.0)
+* [Heroku](https://www.heroku.com/)
+* [Docker](https://www.docker.com/)
+* [MondoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_footprint_row_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624584&gclid=CjwKCAjwmv-DBhAMEiwA7xYrdy4gWaP_BWHcASpr-zjAkNYOioOxw24IBxcIp48GJENAtk7Z4psxrxoCa1EQAvD_BwE)
