@@ -35,7 +35,9 @@
 			"name": "Users",
 			"description": "",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
-			"order": [],
+			"order": [
+				"07497537-4b9c-78ac-c135-c63c68e69fcf"
+			],
 			"owner": 0,
 			"folders_order": [],
 			"id": "6f483f38-e5a2-efc5-b5be-9b2982288beb"
@@ -50,6 +52,37 @@
 	"owner": 0,
 	"public": false,
 	"requests": [
+		{
+			"id": "07497537-4b9c-78ac-c135-c63c68e69fcf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/auth/users",
+			"folder": "9eed5f64-5b2e-12b9-af4b-1afaeaaa6a0e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1619062419115,
+			"name": "/api/auth/signin copy",
+			"description": "Get all products",
+			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"anibalorive@gmail.com\",\n\t\"password\": \"password\"\n}"
+		},
 		{
 			"id": "0da5c810-69c8-0b5f-338d-2a19f75ca522",
 			"headers": "Content-Type: application/json\n",
@@ -74,12 +107,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618536482482,
+			"time": 1619061120842,
 			"name": "/api/auth/signin",
 			"description": "Get all products",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
 			"responses": [],
-			"rawModeData": "{\n\t\"email\": \"joe@gmail.com\",\n\t\"password\": \"sdasdasdasdas\"\n}"
+			"rawModeData": "{\n\t\"email\": \"anibalorive@gmail.com\",\n\t\"password\": \"password\"\n}"
 		},
 		{
 			"id": "12f14192-42c0-3543-48cf-5af164c8b0ac",
@@ -165,20 +198,20 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618536326222,
+			"time": 1619062770055,
 			"name": "/api/auth/signup",
 			"description": "Get all products",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
 			"responses": [],
-			"rawModeData": "{\n\t\"username\" :\"joe\",\n\t\"email\" : \"joe@gmail.com\",\n\t\"password\" : \"sdasdasdasdas\",\n\t\"roles\":[\"admin\", \"moderator\"]\n}"
+			"rawModeData": "{\n\t\"username\" :\"anibalorive2\",\n\t\"email\" : \"anibalorive2@gmail.com\",\n\t\"password\" : \"password\",\n\t\"roles\": [\"admin\"]\n}"
 		},
 		{
 			"id": "733541d4-8e45-6f99-da10-c1b164911905",
-			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k\n",
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwODBlOTYyOWZjOTVhNWM2MDk4ODRlOCIsImlhdCI6MTYxOTA2MTExMSwiZXhwIjoxNjE5OTI1MTExfQ.wyDKo4uFU7Oy-UiRvhKNfAzrJr9tLp0A7wQfx9vbtaI\n",
 			"headerData": [
 				{
 					"key": "x-access-token",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhlNmMyMTg3OWRkMzg1NzQwZjQ5NSIsImlhdCI6MTYxODk2ODMzMywiZXhwIjoxNjE5ODMyMzMzfQ.xwYkLEd6WgnnXv2P-LKXkXPPTodcVfMM8w1EClttf9k",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwODBlOTYyOWZjOTVhNWM2MDk4ODRlOCIsImlhdCI6MTYxOTA2MTExMSwiZXhwIjoxNjE5OTI1MTExfQ.wyDKo4uFU7Oy-UiRvhKNfAzrJr9tLp0A7wQfx9vbtaI",
 					"description": "",
 					"enabled": true
 				}
@@ -196,7 +229,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1618969527061,
+			"time": 1619061217354,
 			"name": "/products:productId",
 			"description": "delete product",
 			"collectionId": "141d412a-d437-ef33-8adf-069cd19519fb",
