@@ -1,6 +1,6 @@
 # proyect-api-rest-jwt-mongodb
 
-This is a proyect to learn more about **jwt**, **mongodb** and **nodeJS**
+This is a project to learn more about **jwt**, **mongodb** and **nodeJS**
 
 # used comand
 npm init -i
