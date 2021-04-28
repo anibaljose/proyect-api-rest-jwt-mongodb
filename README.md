@@ -2,7 +2,7 @@
 
 This is a project to learn more about **jwt**, **mongodb** and **nodeJS**
 
-# used comand
+# used comands
 npm init -i
 I installed the all dependence to the project
 - **express** is a backend web application framework for node js. -> [Express Framework](https://expressjs.com/)
