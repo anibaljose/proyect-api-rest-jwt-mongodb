@@ -1,4 +1,4 @@
-# proyect-api-rest-jwt-mongodb
+# project-api-rest-jwt-mongodb
 
 This is a project to learn more about **jwt**, **mongodb** and **nodeJS**
 
